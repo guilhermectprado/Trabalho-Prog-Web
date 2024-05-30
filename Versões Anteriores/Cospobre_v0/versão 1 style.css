@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Urbanist:wght@300&display=swap');
+
+* {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #13368F;
+    margin: -10px;
+}
+
+header > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+}
+
+header ion-icon {
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+#left-content > #logo {
+    padding-left: 20px;
+    width: 50%;
+}
+
+header > middle-content {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#middle-content > input {
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: #f5f4f4;
+    padding-left: 20px;
+    font-size: 1em;
+    color: #7A7575;
+}
+
+#middle-content > button {
+    height: 40px;
+    min-width: 45px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#middle-content > button > #search {
+    color: #7A7575;
+    width: 20px;
+    height: 20px;
+}
+
+#right-content {
+    padding-right: 20px;
+    justify-content: space-evenly;
+}
+
+#right-content > span {
+    color: #F5F4F4;
+    font-size: 17px; /* mudar pra em */
+    padding-right: 30px;
+}
+
+#right-content > ion-icon:not(:last-child) {
+    padding-right: 5px;
+  }
+  
+#right-content > #conta {
+    color: #F5F4F4;
+    width: 20px;
+    height: 20px;
+}
+
+#right-content > #carrinho {
+    color: #F5F4F4;
+    width: 25px;
+    height: 25px;
+}
+

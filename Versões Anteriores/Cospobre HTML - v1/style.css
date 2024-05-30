@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Urbanist:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+html{
+    font-size: 62.5%;
+}
+html,
+body {
+  height: 100vh;
+  font-family: 'IBM Plex Sans Arabic';
+  text-rendering: optimizelegibility;
+  background-color: #f5f4f4;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #13368F;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 980px;
+    /*min-width: 980px;*/
+    
+    /*margin: auto;*/
+}
+
+header img {
+    width: 150px;
+    margin-left: 10px;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+/*
+header > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+}
+*/
+
+header ion-icon {
+    font-size: 1.rem;
+    cursor: pointer;
+}
+
+header > middle-content {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.middle-content > input {
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    
+    background-color: #f5f4f4;
+    padding-left: 2.0rem;
+    font-size: 1rem;
+    color: #7A7575;
+}
+
+.middle-content > button {
+    height: 40px;
+    min-width: 45px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#search {
+    color: #7A7575;
+    width: 20px;
+    height: 20px;
+}
+
+.right-content {
+    padding-right: 2.0rem;
+    padding-left: 2.0rem;
+    justify-content: space-evenly;
+    background: red;
+}
+
+.right-content > ion-icon {
+    justify-items: center;
+    background:black;
+    padding-top: 1.0rem;
+
+    color: #F5F4F4;
+    width: 20px;
+    height: 25px;
+}
+
+.right-content > span {
+    background: chartreuse;
+    color: #F5F4F4;
+    font-size: 1.7rem; /* mudar pra em */
+    padding: 10px 30px 0px 10px;
+    cursor: pointer;
+}
+
+/*
+#right-content > ion-icon:not(:last-child) {
+    padding-right: 5px;
+}
+*/  
+
+.button {
+    width: 100%;
+    table-layout: fixed;
+    border-radius: 12px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: #3c0cac;
+    border: 5px solid #3c0cac;
+}
+  
+.button:hover {
+    background-color: #3c0cac;
+    color: white;
+}
+  
+.pussycatdolls {
+    padding-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.acessorios {
+    margin: 30px auto;
+    width: 85%;
+    font-weight: bolder;
+    font-size:x-large;
+}
+
+.cards {
+    width: 85%;
+    margin: 10px auto;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: lightcoral;
+}
+
+.card > img {
+    width: 200px;
+    height: 200px;
+}
+
+

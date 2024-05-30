@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logar</title>
+    <link rel="shortcut icon" type="imagex/png" href="images/cabecaum.ico">
+    <link rel="stylesheet" href="conta.css"/>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div id="meio">
+            <img id="logoConta" src="images/logo.svg" alt="logo" onclick="index()">
+        </div>
+    </header>
+
+    <div class="conteudo">
+        <div class="linha">
+            <img id="shingeki" src="images/levi.svg" alt="Levi">
+
+            <div class="centro">
+                <h2>Login</h2>
+                <form action="">
+                    <div class="linha">
+                        <div class="label"><label for="email"><h3>E-mail</h3></label></div>
+                        <div class="input"><input type="text" id="email" placeholder="---@e-mail.com"></div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="label"><label for="senha"><h3>Senha</h3></label></div>
+                        <div class="input"><input type="text" id="senha" placeholder="xxxxxxx"></div>
+                    </div>
+                </form>
+
+                <div class="linha">
+                    <button id="entrar" onclick="entrar()">Entrar</button>
+                    <button id="criarconta" onclick="cadastrar()">Criar conta</button>
+                </div>
+
+                <div class="linha" id="esqsenha" onclick="esqueceusenha()"><h3>Esqueceu a senha?</h3></div>
+            </div>
+            <img id="shingeki" src="images/mikasa.svg" alt="Mikasa">
+        </div>
+    </div>
+
+    
+</body>
+</html>

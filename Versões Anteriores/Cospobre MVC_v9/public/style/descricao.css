@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Urbanist:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: "IBM Plex Sans Arabic";
+  background-color: #f5f4f4;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #13368f;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  /*min-width: 980px;*/
+
+  margin: auto;
+}
+
+header img {
+  width: 150px;
+  margin-left: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.search > .form_busca > input {
+  width: 500px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  margin: 10px;
+
+  background-color: #f5f4f4;
+  padding-left: 20px;
+  font-size: 1em;
+  color: #7a7575;
+}
+
+.container > .menu-section.on > .menu-toggle > ul > .sair {
+  padding-right: 100px;
+}
+
+header nav ul {
+  display: flex;
+  padding-right: 1rem;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 10px auto;
+  padding-left: 50px;
+}
+
+
+header nav ul li:nth-child(2) {
+  padding-right: 10px;
+  padding-left: 130px;
+  
+}
+
+header nav ul li:nth-child(3) {
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+header nav ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+header nav ul li a ion-icon {
+  width: 1.5em;
+  cursor: pointer;
+  padding-top: 1.5rem;
+}
+
+header nav ul li a span {
+  padding-top: 1.5rem;
+}
+
+
+.teste {
+    margin: 50px;
+    display: block;
+  }
+
+.teste-top {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 25em;
+  }
+  
+  .left {
+    display:flex;
+    flex-direction:row-reverse;
+    height: 40em;
+    width: 40em;
+  }
+  
+  .left > .vertical > img {
+    height: 7em;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .left > img {
+    height: 24em;
+    padding: 5px;
+  }
+  
+  .right > h1 {
+    padding: 50px 0px 20px;
+  }
+  
+  .right > .side-by-side > .aaa > h4 {
+    text-align: center;
+  }
+  
+  .good {
+    height: 1.5em;
+  }
+  
+  .teste .teste-top .right button {
+    border-radius: 50px;
+    height: 40px;
+    width: 170px;
+    border: none;
+  }
+  
+  .seleciona {
+    color: #7A7575;
+    background-color: #DCDBDB;
+    margin-top: 20px;
+  }
+  
+  .adiciona {
+    color: white;
+    background-color: #13368f;
+  }
+  
+  #thumb {
+    height: 40px;
+    width: 40px;
+    justify-content:right;
+  }
+  
+  .teste-bottom {
+    margin-top: 50px;
+  }
+  
+  .price {
+    font-size: 0.9em;
+  }
+  
+  .product-name {
+    font-weight: bolder;
+    font-size: x-large;
+  }
+  
+  .side-by-side {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .aaa {
+    display: block;
+    padding: 20px;
+  }
+  
+  .recomendados {
+    padding: 20px 50px 0px 50px;
+    padding-bottom: 50px;
+    background-color: #C4C4C4;
+  
+    display: block;
+  }
+  
+  .recomendados > .card {
+    display: inline-block;
+    padding-right: 70px;
+  }
+
+  .cards {
+    width: 85%;
+    margin: 10px auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    object-fit: cover;
+  }
+  
+  .card > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+  }
+  
+  .price {
+    font-size: 0.9em;
+  }

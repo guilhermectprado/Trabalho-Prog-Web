@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Urbanist:wght@300&display=swap");
+
+* {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  margin: -10px;
+  background-color: #13368f;
+}
+
+#logoConta {
+  background-color: #13368f;
+  cursor: pointer;
+  width: 50%;
+}
+body {
+  background-color: rgb(233, 233, 229);
+}
+.conteudo {
+  margin: -10px;
+  display: flex;
+  flex-direction: column;
+}
+#nanatsu {
+  margin-top: 22px;
+  width: 30%;
+  height: 557px;
+}
+.centro {
+  padding-left: 450px;
+  width: 31.75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  height: 30px;
+  padding-left: 15px;
+  font-size: 0.8em;
+}
+#input_phone {
+  width: 140px;
+}
+#cep {
+  width: 100px;
+}
+
+label {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+button {
+  margin: 5px 10px 5px 10px;
+  cursor: pointer;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #13368f;
+  color: white;
+}
+
+button:hover {
+  background-color: #225bee;
+}
+select {
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  justify-content: center;
+  padding-left: 10px;
+  font-size: 1em;
+  margin-right: 5px;
+}
+.fake{
+  background-color: white;
+}
+
+@media screen and (min-width: 1270px) and (max-width: 1360px) {
+  #logoConta {
+    padding-left: 10%;
+  }
+
+  .centro {
+    padding-left: 300px;
+    width: 80%;
+  }
+
+  #nanatsu {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1270px) {
+  #logoConta {
+    padding-left: 10%;
+  }
+
+  .centro {
+    padding-left: 200px;
+    width: 80%;
+  }
+
+  #nanatsu {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+  #logoConta {
+    padding-left: 10%;
+  }
+
+  .centro {
+    padding-left: 200px;
+    width: 70%;
+  }
+
+  #nanatsu {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+  #logoConta {
+    padding-left: 8%;
+  }
+
+  .centro {
+    padding-left: 100px;
+    width: 100%;
+  }
+
+  #nanatsu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 800px) {
+  #logoConta {
+    padding-left: 10%;
+  }
+
+  .centro {
+    padding-left: 90px;
+    width: 90%;
+  }
+
+  #nanatsu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 750px) {
+  #logoConta {
+    padding-left: 20%;
+  }
+
+  .centro {
+    padding-left: 150px;
+    width: 60%;
+  }
+  label {
+    font-size: 0.8em;
+  }
+
+  #nanatsu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 650px) {
+  #logoConta {
+    padding-left: 15%;
+  }
+
+  #logoConta {
+    padding-left: 20%;
+  }
+
+  label {
+    font-size: 0.8em;
+  }
+
+  #nanatsu {
+    display: none;
+  }
+
+  .centro {
+    padding-left: 50px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #logoConta {
+    padding-left: 15%;
+  }
+  label {
+    font-size: 0.8em;
+  }
+
+  #nanatsu {
+    display: none;
+  }
+
+  .centro {
+    padding-left: 40px;
+    width: 90%;
+  }
+
+  #input_phone {
+    width: 140px;
+  }
+  input {
+    padding-left: 5px;
+  }
+}

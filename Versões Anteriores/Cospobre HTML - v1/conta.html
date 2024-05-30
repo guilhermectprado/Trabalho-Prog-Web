@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta</title>
+    <link rel="stylesheet" href="conta.css"/>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div id="meio">
+            <img id="logoConta" src="images/logo.svg" alt="logo" onclick="index()">
+        </div>
+    </header>
+
+   
+    <div id="conteudo">
+        <div id="esquerda">
+            <img id="levi" src="images/levi.svg" alt="Levi">
+        </div>
+
+        <div id="centro">
+            <div id="login"><h3><i>LOGIN</i></h3></div>
+            <div id="lc">
+                <div>
+                    <h3><i>E-mail:</i></h3>     
+                    <div id="e-mail"><input type="text" placeholder="xxxxxxxx@e-mail.com" /></div>
+                </div>
+                <div>
+                    <h3><i>Senha:</i></h3>  
+                    <div id="senha"><input type="text" placeholder="********"/></div>
+                </div>
+            </div>
+            <div id="botoes">
+                <button id="entrar" onclick="entrar()">ENTRAR</ion-icon></button>
+                <button id="cadastrar" onclick="cadastrar()">CADASTRAR</ion-icon></button>
+            </div>
+            <div id="esqsenha" onclick="esqsenha()"><h3><i>Esqueceu a senha?</i></h3></div>
+        </div>
+
+        <div id="direita">
+            <img id="mikasa" src="images/mikasa.svg" alt="Mikasa">
+        </div>
+    </div>
+</body>
+</html>

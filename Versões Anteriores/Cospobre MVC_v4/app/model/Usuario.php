@@ -1,0 +1,111 @@
+<?php
+
+namespace App\Model;
+use App\Database;
+
+class Usuario {
+    private $nome;
+    private $dataNascimento;
+    private $endereco;
+    private $cep;
+    private $telefone;
+    private $email;
+    private $senha;
+    private $subscribe;
+
+    function __construct(string $nome, string $dia,string $mes,string $ano, string $endereco, string $cep, string $telefone, string $email, string $senha, string $subscribe)
+    {
+        $this->nome = $nome;
+        $temp = $dia . "/". $mes ."/" . $ano;
+        $this->dataNascimento = $temp;
+        $this->endereco = $endereco;
+        $this->cep = $cep;
+        $this->telefone = $telefone;
+        $this->email = $email;
+        $this->senha = hash('sha256', $senha);
+        if ($subscribe =='newsletter'){
+            $this->subscribe = 1;
+        }else{
+            $this->subscribe = 0;
+        }
+        
+    }
+    
+    public static function construtorProBanco(string $nome, string $dataNascimento, string $endereco, string $cep, string $telefone, string $email, string $senha, string $subscribe ) {
+        $instance = new self();
+        $instance->nome = $nome;
+        $instance->dataNascimento = $temp;
+        $instance->endereco = $endereco;
+        $instance->cep = $cep;
+        $instance->telefone = $telefone;
+        $instance->email = $email;
+        $instance->senha = hash('sha256', $senha);
+        $instance->subscribe = $subscribe;
+        return $instance;
+    }
+    public function __get($campo)
+    {
+        return $this->$campo;
+    }
+
+    public function __set($campo, $valor)
+    {
+        return $this->$campo = $valor;
+    }
+
+    public function salvar()
+    {
+        $con = Database::getConnection();
+
+        $stm = $con->prepare('INSERT INTO Usuarios ( nome, datanasc, endereco, cep, telefone,email, senha, subscribe) 
+        VALUES (:nome, :datanasc,:endereco,:cep,:telefone,:email, :senha, :subscribe)');
+        $stm->bindValue(':nome', $this->nome);
+        $stm->bindValue(':datanasc', $this->dataNascimento);
+        $stm->bindValue(':endereco', $this->endereco);
+        $stm->bindValue(':cep', $this->cep);
+        $stm->bindValue(':telefone', $this->telefone);
+        $stm->bindValue(':email', $this->email);
+        $stm->bindValue(':senha', $this->senha);
+        $stm->bindValue(':subscribe', $this->subscribe);
+        $stm->execute();
+    }
+
+    static public function buscarUsuario($email)
+    {
+        $con = Database::getConnection();
+        $stm = $con->prepare('SELECT email, senha FROM Usuarios WHERE email = :email');
+        $stm->bindParam(':email', $email);
+
+        $stm->execute();
+        $resultado = $stm->fetch();
+
+        if ($resultado) {
+            $usuario = new Usuario($resultado['email'], $resultado['senha']);
+            $usuario->senha = $resultado['senha'];
+            return $usuario;
+        } else {
+            return NULL;
+        }
+    }
+
+    public function igual(string $email, string $senha)
+    {
+        return $this->email === $email && $this->senha === hash('sha256', $senha);
+    }
+    static public function buscarTodos(): array
+    {
+        $con = Database::getConnection();
+        $stm = $con->prepare('SELECT nome, datanasc, endereco, cep, telefone,email, senha, subscribe FROM Usuarios');
+        $stm->execute();
+
+        $resultados = [];
+
+        while ($resultado = $stm->fetch()) {
+            $usuario = Usuario :: construtorProBanco($resultado['nome'], $resultado['datanasc'],$resultado['endereco'], $resultado['cep'],$resultado['telefone'],$resultado['email'],$resultado['senha'],$resultado['subscribe']);
+            $usuario->senha = $resultado['senha'];
+            array_push($resultados, $usuario);
+        }
+
+        return $resultados;
+    }
+}

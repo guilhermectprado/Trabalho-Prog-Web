@@ -1,0 +1,105 @@
+.conteudo {
+  
+    margin: -10px;
+    background-color: rgb(233, 233, 229);
+    display: flex;
+    flex-direction: column;
+  }
+  #nanatsu {
+    margin-top: 22px;
+    width: 34%;
+    height: 557px;
+  }
+  .centro {
+    
+    padding-left: 500px;
+    width: 31.75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .linha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  input {
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+  
+    padding-left: 15px;
+    font-size: 1em;
+  }
+  #cep {
+    width: 120px;
+  }
+  label {
+    display: inline-block;
+    padding-right: 15px;
+  }
+  button {
+    margin: 5px 10px 5px 10px;
+    cursor: pointer;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #13368f;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #225bee;
+  }
+  select{
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    justify-content: center;
+    padding-left: 10px;
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  
+  
+  @media screen and (max-width: 1125px) {
+    
+    #logoConta {
+      padding-left: 10%;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    #logoConta {
+      padding-left: 10%;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    #logoConta {
+      padding-left: 15%;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    header {
+      height: 70px;
+    }
+  
+    #logoConta {
+      padding-left: 20%;
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    header {
+      height: 50px;
+    }
+  
+    #logoConta {
+      padding-left: 10%;
+    }
+  }

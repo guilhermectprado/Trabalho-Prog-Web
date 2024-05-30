@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cospobrito</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="images/cabecaum.ico">
+    <!-- <script> $("#header").load("header.html");</script> -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="left-content">
+                <img class="logo" src="images/logo.svg" alt="logo">
+            </div>
+    
+            <div class="middle-content">
+                <input type="text" placeholder="Buscar produtos, nome, categoria, ..."/>
+                <!-- 
+                    <button><ion-icon name="search-outline" id="search"></ion-icon></button>
+                -->
+            </div>
+    
+            <div class="right-content">
+                <ion-icon name="person-outline" class="conta" onclick="conta()"></ion-icon><span onclick="conta()">Conta</span>
+                <ion-icon name="cart-outline" class="carrinho" onclick="carrinho()"></ion-icon><span onclick="carrinho()">Carrinho</span>
+            </div>
+        </div>
+    </header>
+
+    <p class="acessorios">Acessórios</p>
+    <div class="cards">
+        <div class="card">
+            <img id="cartas" src="images/hitaiite.svg" alt="hitai">
+            <div class="card-content">
+                <h3>Hitai-ite</h3>
+            </div>
+            <div class="card-price">
+                <p class="price">R$55,00</p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="cartas" src="images/shuriken.svg" alt="shurikem">
+            <div class="card-content">
+                <h3>Shuriken</h3>
+            </div>
+            <div class="card-price">
+                <p class="price">R$75,00</p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="cartas" src="images/shingeki.svg" alt="shingeki">
+            <div class="card-content">
+                <h3>Espada Shingeki No Kyojin</h3>
+            </div>
+            <div class="card-price">
+                <p class="price">R$100,00</p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="cartas" src="images/baculo.svg" alt="baculo">
+            <div class="card-content">
+                <h3>Báculo Sakura Card Captor</h3>
+            </div>
+            <div class="card-price">
+                <p class="price">R$150,00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <img id="cartas" src="images/cartas.svg" alt="cartas">
+            <div class="card-content">
+                <h3>Cartas Clear Sakura Card Captor</h3>
+            </div>
+            <div class="card-price">
+                <p class="price">R$45,00</p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="cartas" src="images/zelda.svg" alt="zelda">
+            <div class="card-content">
+                <h3>Armas Zelda</h3>
+            </div>
+            <div class="card-price">
+                <p class="price">R$130,00</p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="cartas" src="images/batman.svg" alt="batman">
+            <div class="card-content">
+                <h3>Máscara Batman</h3>
+            </div>
+            <div class="card-price">
+                <p class="price">R$45,00</p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="cartas" src="images/spiderman.svg" alt="spiderman">
+            <div class="card-content">
+                <h3>Máscara Homem-Aranha</h3>
+            </div>
+            <div class="card-price">
+                <p class="price">R$55,00</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

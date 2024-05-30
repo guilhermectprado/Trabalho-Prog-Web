@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Urbanist:wght@300&display=swap");
+
+* {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  margin: -10px;
+  background-color: #13368f;
+}
+
+#LogoCartao {
+  background-color: #13368f;
+  cursor: pointer;
+  width: 50%;
+}
+
+body {
+  background-color: rgb(233, 233, 229);
+}
+
+.conteudo {
+  margin: -10px;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-bottom: 60px;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+#titulo {
+  margin-top: -50px;
+}
+
+label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input {
+  text-transform: uppercase;
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  padding-left: 15px;
+  font-size: 1em;
+}
+
+#cvv {
+  margin-left: 15px;
+}
+
+#inputCVV > input {
+  margin-left: -5px;
+  width: 50px;
+}
+
+select {
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  justify-content: center;
+  padding-left: 10px;
+  font-size: 1em;
+  margin-right: 5px;
+}
+
+button {
+  margin: 5px 10px 5px 10px;
+  cursor: pointer;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #13368f;
+  color: white;
+}
+
+button:hover {
+  background-color: #225bee;
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1360px) {
+  #LogoCartao {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+  #LogoCartao {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+  #LogoCartao {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 800px) {
+  #LogoCartao {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 750px) {
+  #LogoCartao {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 650px) {
+  #LogoCartao {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #LogoCartao {
+    padding-left: 10%;
+  }
+
+  label {
+    font-size: 0.8em;
+    margin-left: 21px;
+  }
+}
+
+.conteudo .card-conteudo {
+  margin-bottom: 20px;
+  margin-right: 35px;
+  position: relative;
+  height: 220px;
+  width: 400px;
+}
+
+.conteudo .card-conteudo .front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #13368f, #28946d);
+  border-radius: 5px;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: transform 0.4s ease-out;
+  text-transform: uppercase;
+}
+
+.conteudo .card-conteudo .front .image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.conteudo .card-conteudo .front .image img {
+  height: 50px;
+}
+
+.conteudo .card-conteudo .front .card-number-box {
+  padding: 30px 0;
+  font-size: 22px;
+  color: #fff;
+}
+
+.conteudo .card-conteudo .front .flexbox {
+  display: flex;
+}
+
+.conteudo .card-conteudo .front .flexbox .box:nth-child(1) {
+  margin-right: auto;
+}
+
+.conteudo .card-conteudo .front .flexbox .box {
+  font-size: 15px;
+  color: #fff;
+}
+
+.conteudo .card-conteudo .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #13368f, #28946d);
+  border-radius: 5px;
+  padding: 20px 0;
+  text-align: right;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateY(180deg);
+  transition: transform 0.4s ease-out;
+}
+
+.conteudo .card-conteudo .back .stripe {
+  background: #000;
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+}
+
+.conteudo .card-conteudo .back .box {
+  padding: 0 20px;
+}
+
+.conteudo .card-conteudo .back .box span {
+  color: #fff;
+  font-size: 15px;
+}
+
+.conteudo .card-conteudo .back .box .cvv-box {
+  height: 35px;
+  padding: -10px;
+  padding-top: 10px;
+  padding-right: 5px;
+  margin-top: 10px;
+  color: #333;
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+}

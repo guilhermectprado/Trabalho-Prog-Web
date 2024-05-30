@@ -1,0 +1,63 @@
+.centralizar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: inline-block;
+    margin: 15px 20px 15px 20px;
+}
+
+input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    padding-left: 20px;
+    font-size: 1em;
+}
+
+button[type=submit] {
+    float: right;
+}
+
+button {
+    /*TOP LEFT BOTTOM RIGHT*/
+    margin: 10px 20px 5px 20px;
+    cursor: pointer;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #13368f;
+    color: white;
+}
+  
+button:hover {
+    background-color: #225bee;
+}
+
+#senhaicon {
+    margin-right: auto;
+    width: 400px;
+    position: relative;
+    direction: ltr;
+    padding-right: 5px;
+}
+
+#senha {
+    padding-right: 50px;
+    width: 100%;
+}
+
+#olho {
+    position:absolute;
+    bottom:2px;
+    right: -50px;
+    height: 1.8em;
+    align-items: center;
+    cursor: pointer;
+}

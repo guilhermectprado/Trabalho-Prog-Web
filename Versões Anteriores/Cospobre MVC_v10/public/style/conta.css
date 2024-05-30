@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Urbanist:wght@300&display=swap");
+
+* {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  margin: -10px;
+  background-color: #13368f;
+}
+
+
+#logoConta {
+  background-color: #13368f;
+  cursor: pointer;
+  width: 50%;
+}
+
+body {
+  background-color: rgb(233, 233, 229);
+}
+
+.conteudo {
+  margin: -10px;
+}
+
+#imagem {
+  margin-top: 22px;
+  width: 34%;
+}
+
+#imagem2 {
+  margin-top: 22px;
+  width: 34%;
+}
+
+.centro {
+  margin-bottom: 80px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#esqsenha {
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.7em;
+  text-decoration: underline;
+}
+
+label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  padding-left: 15px;
+  font-size: 1em;
+}
+
+button {
+  margin-inline-start: auto;
+  cursor: pointer;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #13368f;
+  color: white;
+}
+
+button:hover {
+  background-color: #225bee;
+}
+
+.msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  color: red;
+}
+
+.error {
+  border:1px solid red;
+}
+
+#senhaicon {
+  width: 270px;
+  position:relative;
+  margin-left: 5px;
+  direction: ltr;
+}
+
+#senha {
+  padding-right: 30px;
+  width: 100%;
+}
+
+#olho {
+  position:absolute;
+  bottom:2px;
+  right: -35px;
+  height: 1.8em;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1360px) {
+  #logoConta {
+    padding-left: 10%;
+  }
+
+  .centro {
+    width: 100%;
+  }
+
+  .conteudo {
+    margin-top: 50px;
+  }
+
+  #imagem {
+    margin-top: -20px;
+    width: 30%;
+  }
+
+  #imagem2 {
+    margin-top: -20px;
+    width: 30%;
+  }
+
+  #esqsenha {
+    padding-right: 27%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+  #logoConta {
+    padding-left: 10%;
+  }
+
+  .centro {
+    width: 70%;
+  }
+
+  #imagem {
+    margin-top: -70px;
+    width: 27%;
+  }
+
+  #imagem2 {
+    margin-top: -70px;
+    width: 27%;
+  }
+
+  #esqsenha {
+    padding-right: 27%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+  #logoConta {
+    padding-left: 10%;
+  }
+
+  .centro {
+    width: 100%;
+  }
+
+  #imagem {
+    margin-top: -100px;
+    width: 25%;
+  }
+
+  #imagem2 {
+    margin-top: -100px;
+    width: 25%;
+  }
+
+  #esqsenha {
+    padding-right: 28%;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 800px) {
+  #logoConta {
+    padding-left: 10%;
+  }
+
+  .centro {
+    width: 90%;
+  }
+
+  #imagem {
+    width: 45%;
+  }
+
+  #imagem2 {
+    display: none;
+  }
+
+  #esqsenha {
+    padding-right: 27%;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 750px) {
+  #logoConta {
+    padding-left: 20%;
+  }
+
+  .centro {
+    width: 60%;
+  }
+
+  #imagem {
+    margin-top: -100px;
+    width: 40%;
+  }
+
+  #imagem2 {
+    display: none;
+  }
+
+  #esqsenha {
+    padding-right: 27%;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 650px) {
+  #logoConta {
+    padding-left: 15%;
+  }
+
+  #logoConta {
+    padding-left: 20%;
+  }
+
+  #imagem {
+    display: none;
+  }
+
+  #imagem2 {
+    display: none;
+  }
+
+  .centro {
+    width: 100%;
+  }
+
+  #esqsenha {
+    padding-right: 27%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #logoConta {
+    padding-left: 15%;
+  }
+
+  #imagem {
+    display: none;
+  }
+
+  #imagem2 {
+    display: none;
+  }
+
+  .centro {
+    width: 100%;
+  }
+
+  #esqsenha {
+    padding-right: 25%;
+  }
+}

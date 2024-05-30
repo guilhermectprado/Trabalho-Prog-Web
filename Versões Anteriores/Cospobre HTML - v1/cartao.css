@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Urbanist:wght@300&display=swap");
+
+* {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  margin: -10px;
+  background-color: #13368f;
+}
+
+#LogoCartao {
+  background-color: #13368f;
+  cursor: pointer;
+  width: 50%;
+}
+
+body {
+  background-color: rgb(233, 233, 229);
+}
+
+.conteudo {
+  margin: -10px;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+#titulo {
+  margin-top: 80px;
+  justify-content: center;
+}
+
+label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  padding-left: 15px;
+  font-size: 1em;
+}
+
+#cvv {
+  margin-left: 15px;
+}
+
+#inputCVV > input {
+  margin-left: -5px;
+  width: 50px;
+}
+
+select {
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  justify-content: center;
+  padding-left: 10px;
+  font-size: 1em;
+  margin-right: 5px;
+}
+
+button {
+  margin: 5px 10px 5px 10px;
+  cursor: pointer;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #13368f;
+  color: white;
+}
+
+button:hover {
+  background-color: #225bee;
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1360px) {
+  #logoConta {
+    padding-left: 10%;
+  }
+
+  .centro {
+    width: 80%;
+  }
+
+  #esqsenha {
+    padding-right: 30%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+  #logoConta {
+    padding-left: 10%;
+  }
+
+  .centro {
+    width: 70%;
+  }
+
+  #esqsenha {
+    padding-right: 27%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+  #logoConta {
+    padding-left: 10%;
+  }
+
+  .centro {
+    width: 100%;
+  }
+
+  #esqsenha {
+    padding-right: 32%;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 800px) {
+  #logoConta {
+    padding-left: 10%;
+  }
+
+  .centro {
+    width: 90%;
+  }
+
+  #esqsenha {
+    padding-right: 27%;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 750px) {
+  #logoConta {
+    padding-left: 20%;
+  }
+
+  .centro {
+    width: 60%;
+  }
+
+  #esqsenha {
+    padding-right: 35%;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 650px) {
+  #logoConta {
+    padding-left: 15%;
+  }
+
+  #logoConta {
+    padding-left: 20%;
+  }
+
+  .centro {
+    width: 100%;
+  }
+
+  #esqsenha {
+    padding-right: 22%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #logoConta {
+    padding-left: 15%;
+  }
+
+  .centro {
+    width: 100%;
+  }
+
+  #esqsenha {
+    padding-right: 25%;
+  }
+}
